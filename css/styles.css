@@ -1,0 +1,280 @@
+/*кольори сайту*/
+:root{
+    --main-title-color: #ffffff;
+    --accent-color-logo-grunt: #2E2F42;
+    --accent-color-logo: #F4F4FD;
+    --footer-text-color: #E7E9FC;
+    --ourteam-grunt-foto: #F4F4FD;
+    --advantages-ourteam-text:#434455;
+    --heder-color-info: #434455;
+    --color-button-link: #404BBF;
+    --color-logo-button: #4D5AE5;
+}
+
+.visually-hidden {  
+    position: absolute;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 1px;
+ }
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    background: var(--main-title-color);
+    color: var(--advantages-ourteam-text);
+    
+}
+
+/*прибираємо крапочки*/
+.list{
+    list-style: none;
+}
+
+/*прибираємо підкреслення і нахил */
+.link{
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+
+.header{
+    
+}
+
+.header-navigtion{
+
+}
+
+.header-logo{
+    font-family: 'Raleway' , sans-serif;    
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    text-transform: uppercase;
+    color: var(--accent-color-logo-grunt);
+    text-decoration: none;
+}
+
+.header-logo-color{
+    color: var(--color-logo-button); 
+}
+
+.header-list{
+
+}
+
+.header-item{
+
+}
+
+.header-link{      
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--accent-color-logo-grunt);
+}
+
+.header-link:hover,
+.header-link:focus{
+    color: var(--color-button-link);
+}
+
+.header-info{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--heder-color-info);
+}
+
+.header-info:hover,
+.header-info:focus{
+    color: var(--color-button-link);
+}
+
+
+/* якби був active */
+/* .header-info:active{
+    color: var(--color-button-link);
+} */
+
+
+/*hero image*/
+
+.hero-section{
+    background: var(--accent-color-logo-grunt);
+}
+
+.hero-image{    
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    color: var(--main-title-color);
+}
+
+.hero-image-btn{
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    color: var(--main-title-color);
+}
+
+  .hero-button{
+    background: var(--color-logo-button);
+  }
+
+  .hero-button:hover ,
+  .hero-button:focus {
+    background: var(--color-button-link);
+  }
+  
+   /*переваги*/
+.hero-advantages-section{
+
+}
+
+.hero-advantages-list{
+
+}
+
+.hero-advantages-item{
+
+}
+
+/*напрямок*/
+.hero-advantages-direction{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--accent-color-logo-grunt);
+}
+
+.hero-advantages-text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--advantages-ourteam-text);
+}
+
+/*Що ми робимо-напрямок*/
+.wedoing-direction-section{
+
+}
+
+.wedoing-direction-text{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--accent-color-logo-grunt);    
+}
+
+.wedoing-direction-list{
+
+}
+
+.wedoing-direction-foto{
+
+}
+
+/*наша команда*/
+.ourteam-section{
+    background: var(--ourteam-grunt-foto);
+}
+
+.ourteam-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--accent-color-logo-grunt);
+}
+
+.ourteam-list{
+
+}
+
+.ourteam-item{
+    background: var(--main-title-color);
+}
+
+.ourteam-name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--accent-color-logo-grunt);
+}
+
+.ourteam-function{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--advantages-ourteam-text);
+}
+
+/*footer*/
+.footer-block{    
+    background: var(--accent-color-logo-grunt);
+}
+
+.footer-logo-color{
+    color: var(--accent-color-logo);
+}
+
+.footer-text-color{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--footer-text-color);
+}
+
+
+/*------ portfolio -----*/
+
+
+.prtf-filtr{
+
+}
+
+.prtf-button-text{
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--color-logo-button);
+}
+
+.prtf-button-grunt:hover,
+.prtf-button-grunt:focus{
+    background: var(--color-button-link);
+    color: var(--ourteam-grunt-foto);
+}
+
+.prtf-button-grunt{
+    background: var(--ourteam-grunt-foto);
+    cursor: pointer;
+}
+
+.cards-name{    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em; 
+    color: var(--accent-color-logo-grunt);   
+}
+
+.cards-direction{
+    font-size: 16px;
+    letter-spacing: 0.02em;    
+    line-height: 1.5;
+    color: var(--advantages-ourteam-text);    
+}
