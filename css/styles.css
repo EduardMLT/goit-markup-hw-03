@@ -5,10 +5,11 @@
     --accent-color-logo: #F4F4FD;
     --footer-text-color: #E7E9FC;
     --ourteam-grunt-foto: #F4F4FD;
-    --advantages-ourteam-text:#434455;
+    --advantages-ourteam-text: #434455;
     --heder-color-info: #434455;
     --color-button-link: #404BBF;
     --color-logo-button: #4D5AE5;
+    --card-set-gap: 72px;
 }
 
 .visually-hidden {  
@@ -28,7 +29,16 @@ body {
     font-family: 'Roboto' , sans-serif;
     background: var(--main-title-color);
     color: var(--advantages-ourteam-text);
-    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 /*прибираємо крапочки*/
@@ -42,14 +52,30 @@ body {
     font-style: normal;
 }
 
+.page{
+    width: 1440px;
+    margin: 15px;
+}
 
+/* тимчасово задаємо кордон елементу */
+.tmp-brdr{
+    outline: 2px solid transparent;
+} 
 
-.header{
+.block{
+    display: inline-block;
+}
+
+.container{
+    width: 1158px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
 .header-navigtion{
-
+    
 }
 
 .header-logo{
@@ -57,10 +83,12 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.5;
-    display: flex;
+    display: inline;
     text-transform: uppercase;
     color: var(--accent-color-logo-grunt);
     text-decoration: none;
+    margin-right: 26px;
+    
 }
 
 .header-logo-color{
@@ -71,8 +99,13 @@ body {
 
 }
 
-.header-item{
+.header-retreat-raz{
+    margin-left: 242px;
+}
 
+.header-item{
+    margin-left: 40px;
+    
 }
 
 .header-link{      
@@ -91,11 +124,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--heder-color-info);
+    
 }
 
 .header-info:hover,
 .header-info:focus{
     color: var(--color-button-link);
+   
 }
 
 
@@ -109,6 +144,9 @@ body {
 
 .hero-section{
     background: var(--accent-color-logo-grunt);
+    padding-bottom: 192px;
+    padding-top: 192px;
+    margin-bottom: 120px;
 }
 
 .hero-image{    
@@ -116,6 +154,9 @@ body {
     font-size: 56px;
     line-height: 1.1;
     color: var(--main-title-color);
+    text-align: center;
+    width: 520px;
+    margin: 0 auto;
 }
 
 .hero-image-btn{
@@ -126,10 +167,14 @@ body {
     display: flex;
     align-items: center;
     color: var(--main-title-color);
+    margin: 0 auto;
+    cursor: pointer;
+    
 }
 
   .hero-button{
     background: var(--color-logo-button);
+    
   }
 
   .hero-button:hover ,
@@ -139,15 +184,24 @@ body {
   
    /*переваги*/
 .hero-advantages-section{
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+     
 }
 
 .hero-advantages-list{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .hero-advantages-item{
-
+    width: 264px;
+    display: inline-block;
+    margin-left: 22px;
 }
 
 /*напрямок*/
@@ -166,7 +220,7 @@ body {
 
 /*Що ми робимо-напрямок*/
 .wedoing-direction-section{
-
+    margin-bottom: 120px;
 }
 
 .wedoing-direction-text{
@@ -174,7 +228,9 @@ body {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: var(--accent-color-logo-grunt);    
+    color: var(--accent-color-logo-grunt); 
+    text-align: center; 
+    margin-bottom: 72px; 
 }
 
 .wedoing-direction-list{
@@ -195,14 +251,22 @@ body {
     font-size: 36px;
     line-height: 1.1;
     color: var(--accent-color-logo-grunt);
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .ourteam-list{
-
+    padding-left: 17px;
 }
 
 .ourteam-item{
     background: var(--main-title-color);
+    margin-right: 17px;
+}
+
+.ourteam-block-man{
+    margin: 32px 0;
 }
 
 .ourteam-name{
@@ -210,17 +274,25 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: var(--accent-color-logo-grunt);
+    text-align: center;
 }
 
 .ourteam-function{
     font-size: 16px;
     line-height: 1.5;
     color: var(--advantages-ourteam-text);
+    text-align: center;
 }
 
 /*footer*/
 .footer-block{    
     background: var(--accent-color-logo-grunt);
+}
+
+.footer-block-block{
+    width: 264px;
+    margin: 0 0 0 156px;
+    padding: 100px 0 100px 0 ;
 }
 
 .footer-logo-color{

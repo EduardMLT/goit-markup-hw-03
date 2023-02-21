@@ -13,31 +13,37 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body>
-    <header class="header">
-      <nav class="header-navigtion">
+  <body class="page tmp-brdr">
+    <header class="container tmp-brdr">
+      <nav class="header-navigtion tmp-brdr block">
         <!--переходи по сайту-->
         <a href="./index.html" class="header-logo">
           <span class="header-logo-color">Web</span>
           <span>Studio</span>
         </a>
 
-        <ul class="header-list list">
-          <li class="header-item">
+        <ul class="header-list list block">
+          <li class="header-item tmp-brdr block">
             <a href="./index.html" class="header-link link">Studio</a>
           </li>
-          <li class="header-item">
+          <li class="header-item tmp-brdr block">
             <a href="./portfolio.html" class="header-link link">Portfolio</a>
           </li>
-          <li class="header-item">
+          <li class="header-item tmp-brdr block">
             <a href="" class="header-link link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <address>
+      <address class="block header-retreat-raz">
         <ul class="list link">
           <!--         Maps
               <li>
@@ -47,12 +53,12 @@
                 м. Київ, пр-т Лесі Українки, 26</a>
               </li>         -->
 
-          <li>
+          <li class="header-item tmp-brdr block">
             <a href="mailto:info@devstudio.com" class="header-info link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="header-item tmp-brdr block">
             <a href="tel:+110001111111" class="header-info link"
               >+11 (000) 111-11-11</a
             >
@@ -77,29 +83,29 @@
         <!--прихований заголовок-->
         <h2 class="visually-hidden">section two</h2>
 
-        <ul class="hero-advantages-list list">
-          <li class="hero-advantages-item">
+        <ul class="hero-advantages-list list tmp-brdr container">
+          <li class="hero-advantages-item tmp-br">
             <h3 class="hero-advantages-direction">Strategy</h3>
             <p class="hero-advantages-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li class="hero-advantages">
+          <li class="hero-advantages-item tmp-br">
             <h3 class="hero-advantages-direction">Punctuality</h3>
             <p class="hero-advantages-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li class="hero-advantages">
+          <li class="hero-advantages-item tmp-br">
             <h3 class="hero-advantages-direction">Diligence</h3>
             <p class="hero-advantages-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li class="hero-advantages">
+          <li class="hero-advantages-item tmp-br">
             <h3 class="hero-advantages-direction">Technologies</h3>
             <p class="hero-advantages-text">
               Design practice focused on digital experiences. We bring forth a
@@ -109,10 +115,10 @@
         </ul>
       </section>
 
-      <section class="wedoing-direction-section">
+      <section class="wedoing-direction-section tmp-brdr container">
         <h2 class="wedoing-direction-text">What are we doing</h2>
         <ul class="wedoing-direction-list list">
-          <li class="wedoing-direction-foto">
+          <li class="wedoing-direction-foto block">
             <img
               src="./images/img1.jpg"
               alt="Computer MAC"
@@ -120,7 +126,7 @@
               height="300"
             />
           </li>
-          <li class="wedoing-direction-foto">
+          <li class="wedoing-direction-foto block">
             <img
               src="./images/img2.jpg"
               alt="Mobile phones"
@@ -128,7 +134,7 @@
               height="300"
             />
           </li>
-          <li class="wedoing-direction-foto">
+          <li class="wedoing-direction-foto block">
             <img
               src="./images/img3.jpg"
               alt="Computer and phones"
@@ -139,48 +145,59 @@
         </ul>
       </section>
 
-      <section class="ourteam-section">
+      <section class="ourteam-section tmp-brdr container">
         <h2 class="ourteam-title">Our Team</h2>
-        <ul class="ourteam-list list">
-          <li class="ourteam-item">
+        <ul class="ourteam-list list block">
+          <li class="ourteam-item block">
             <img
               src="./images/img-a.jpg"
               alt="Smiling man with a beard"
               width="264"
               height="260"
             />
-            <h3 class="ourteam-name">Mark Guerrero</h3>
-            <p class="ourteam-function">Product Designer</p>
+            <div class="ourteam-block-man">
+              <h3 class="ourteam-name">Mark Guerrero</h3>
+              <p class="ourteam-function">Product Designer</p>
+            </div>
           </li>
-          <li class="ourteam-item">
+
+          <li class="ourteam-item block">
             <img
               src="./images/img-b.jpg"
               alt="Smiling man"
               width="264"
               height="260"
             />
-            <h3 class="ourteam-name">Tom Ford</h3>
-            <p class="ourteam-function">Frontend Developer</p>
+            <div class="ourteam-block-man">
+              <h3 class="ourteam-name">Tom Ford</h3>
+              <p class="ourteam-function">Frontend Developer</p>
+            </div>
           </li>
-          <li class="ourteam-item">
+
+          <li class="ourteam-item block">
             <img
               src="./images/img-c.jpg"
               alt="Smiling girl"
               width="264"
               height="260"
             />
-            <h3 class="ourteam-name">Camila Garcia</h3>
-            <p class="ourteam-function">Marketing</p>
+            <div class="ourteam-block-man">
+              <h3 class="ourteam-name">Camila Garcia</h3>
+              <p class="ourteam-function">Marketing</p>
+            </div>
           </li>
-          <li class="ourteam-item">
+
+          <li class="ourteam-item block">
             <img
               src="./images/img-d.jpg"
               alt="Smiling man"
               width="264"
               height="260"
             />
-            <h3 class="ourteam-name">Daniel Wilson</h3>
-            <p class="ourteam-function">UI Designer</p>
+            <div class="ourteam-block-man">
+              <h3 class="ourteam-name">Daniel Wilson</h3>
+              <p class="ourteam-function">UI Designer</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -188,15 +205,17 @@
 
     <footer>
       <!--footer-->
-      <div class="footer-block">
-        <a href="./index.html" class="header-logo">
-          <span class="header-logo-color">Web</span>
-          <span class="footer-logo-color">Studio</span>
-        </a>
-        <p class="footer-text-color">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+      <div class="footer-block tmp-brdr">
+        <div class="footer-block-block">
+          <a href="./index.html" class="header-logo">
+            <span class="header-logo-color">Web</span>
+            <span class="footer-logo-color">Studio</span>
+          </a>
+          <p class="footer-text-color">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
