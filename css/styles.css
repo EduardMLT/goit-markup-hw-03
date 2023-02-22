@@ -9,7 +9,9 @@
     --heder-color-info: #434455;
     --color-button-link: #404BBF;
     --color-logo-button: #4D5AE5;
-    --card-set-gap: 72px;
+    --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    --color-tmp-brdr: #transparent ;
 }
 
 .visually-hidden {  
@@ -54,12 +56,12 @@ p {
 
 .page{
     width: 1440px;
-    margin: 15px;
 }
 
 /* тимчасово задаємо кордон елементу */
 .tmp-brdr{
-    outline: 2px solid transparent;
+    /* outline: 2px solid tomato; */
+    outline: 2px solid var(--color-tmp-brdr);
 } 
 
 .block{
@@ -68,9 +70,17 @@ p {
 
 .container{
     width: 1158px;
-    margin: 15px;
+    /* margin: 15px; */
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+.container-to-footer{
+    margin-bottom: 120px;
+}
+
+.header-line{
     
 }
 
@@ -83,12 +93,10 @@ p {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.5;
-    display: inline;
     text-transform: uppercase;
     color: var(--accent-color-logo-grunt);
     text-decoration: none;
     margin-right: 26px;
-    
 }
 
 .header-logo-color{
@@ -96,15 +104,20 @@ p {
 }
 
 .header-list{
+    margin-block-start: 0;
+    margin-block-end: 0;
 
 }
 
 .header-retreat-raz{
     margin-left: 242px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .header-item{
     margin-left: 40px;
+    padding: 24px 0 24px 0;
     
 }
 
@@ -258,6 +271,7 @@ p {
 
 .ourteam-list{
     padding-left: 17px;
+    padding-bottom: 72px;
 }
 
 .ourteam-item{
@@ -310,7 +324,17 @@ p {
 
 
 .prtf-filtr{
+    margin: 96px 0 72px 0;
+    justify-content: center;
+      
+}
 
+.prtf-block{
+    display: flex;
+}
+
+.prtf-block-dist{
+    margin-left: 24px;
 }
 
 .prtf-button-text{
@@ -318,11 +342,10 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
     color: var(--color-logo-button);
+    border-radius: 4px;
+    border: 1px solid var(--footer-text-color);
 }
 
 .prtf-button-grunt:hover,
@@ -334,6 +357,16 @@ p {
 .prtf-button-grunt{
     background: var(--ourteam-grunt-foto);
     cursor: pointer;
+}
+
+.card{
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+.card-block-text{
+    padding: 32px 0 32px 16px;
 }
 
 .cards-name{    
