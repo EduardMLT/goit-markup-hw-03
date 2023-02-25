@@ -46,12 +46,32 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+    margin: 0;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 /*прибираємо крапочки*/
 .list{
     list-style: none;
+}
+
+/* відступи і центрування для Li текста*/
+
+.li-flex-center{
+    width: 264px;
+    display: inline-block; 
+} 
+
+.li-block-dist{
+    margin-left: 24px;
+} 
+
+.li-block-dist:first-child{
+    margin-left: 0;
 }
 
 /*прибираємо підкреслення і нахил */
@@ -60,9 +80,7 @@ p {
     font-style: normal;
 }
 
-.page{
-    width: 1440px;
-}
+
 
 /* тимчасово задаємо кордон елементу */
 .tmp-brdr{
@@ -71,6 +89,12 @@ p {
 } 
 
 .block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-inline{
     display: inline-block;
 }
 
@@ -79,12 +103,21 @@ p {
     /* margin: 15px; */
     margin-left: auto;
     margin-right: auto;
-    
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.container-to-footer{
+.backdown-to-footer{
     margin-bottom: 120px;
 }
+
+.header-justify{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
 
 .header-navigtion{
     
@@ -161,7 +194,6 @@ p {
     background: var(--accent-color-logo-grunt);
     padding-bottom: 192px;
     padding-top: 192px;
-    margin-bottom: 120px;
 }
 
 .hero-image{    
@@ -172,10 +204,12 @@ p {
     text-align: center;
     width: 520px;
     margin: 0 auto;
+    padding-bottom: 43px;
 }
 
 .hero-image-btn{
     font-family: 'Roboto' , sans-serif;
+    padding: 16px 32px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -184,7 +218,8 @@ p {
     color: var(--main-title-color);
     margin: 0 auto;
     cursor: pointer;
-    
+    border-radius: 4px;
+    border: 1px solid var(--color-tmp-brdr);
 }
 
   .hero-button{
@@ -201,23 +236,24 @@ p {
 .hero-advantages-section{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
      
 }
 
-.hero-advantages-list{
+/* .hero-advantages-list{
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
 
-}
+} */
 
-.hero-advantages-item{
+/* .hero-advantages-item{
     width: 264px;
     display: inline-block;
     margin-left: 22px;
-}
+} */
 
 /*напрямок*/
 .hero-advantages-direction{
@@ -245,7 +281,7 @@ p {
     letter-spacing: 0.02em;
     color: var(--accent-color-logo-grunt); 
     text-align: center; 
-    margin-bottom: 72px; 
+    padding-bottom: 72px; 
 }
 
 .wedoing-direction-list{
@@ -272,17 +308,15 @@ p {
 }
 
 .ourteam-list{
-    padding-left: 17px;
     padding-bottom: 72px;
 }
 
-.ourteam-item{
+.ourteam-item-grunt{
     background: var(--main-title-color);
-    margin-right: 17px;
 }
 
 .ourteam-block-man{
-    margin: 32px 0;
+    padding: 32px 0;
 }
 
 .ourteam-name{
@@ -301,15 +335,15 @@ p {
 }
 
 /*footer*/
-.footer-block{    
+.footer-grunt{    
     background: var(--accent-color-logo-grunt);
 }
 
-.footer-block-block{
+.footer-block{
     width: 264px;
     margin: 0 0 0 156px;
     padding: 100px 0 100px 0 ;
-}
+} 
 
 .footer-logo-color{
     color: var(--accent-color-logo);
@@ -337,10 +371,16 @@ p {
 
 .prtf-block-dist{
     margin-left: 24px;
+} 
+
+.prtf-block-dist:first-child{
+    margin-left: 0;
 }
+
 
 .prtf-button-text{
     font-family: 'Roboto' , sans-serif;
+    padding: 12px 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -359,6 +399,12 @@ p {
 .prtf-button-grunt{
     background: var(--ourteam-grunt-foto);
     cursor: pointer;
+}
+
+.cards-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card{
