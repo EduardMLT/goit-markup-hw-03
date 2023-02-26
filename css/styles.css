@@ -12,13 +12,16 @@
     --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     --color-tmp-brdr: #transparent ;
-    --shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
-.header-line {
-    box-shadow: var(--shadow);
+
+.header-line{
+    border-bottom: 1px solid var(--footer-text-color);
 }
+
+
+
     
 .visually-hidden {  
     position: absolute;
@@ -99,11 +102,15 @@ ul {
 
 .container{
     width: 1158px;
-    /* margin: 15px; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+}
+
+.header-section{
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-justify{
@@ -152,7 +159,7 @@ ul {
 
 .header-item{
     margin-left: 40px;
-    padding: 24px 0 24px 0; 
+    /* padding: 24px 0 24px 0;  */
 }
 
 .header-info{
@@ -291,9 +298,11 @@ ul {
 /*footer*/
 .footer-grunt{    
     background: var(--accent-color-logo-grunt);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.backdown-to-footer{
+.backdown-to-footer-prtf{
     padding-bottom: 120px;
     padding-top: 96px;
 }
@@ -301,7 +310,7 @@ ul {
 .footer-block{
     width: 264px;
     margin: 0 0 0 156px;
-    padding: 100px 0 100px 0 ;
+    /* padding: 100px 0 100px 0 ; */
 } 
 
 .footer-logo-color{
