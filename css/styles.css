@@ -52,6 +52,7 @@ p {
 ul {
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-inline-start: 0;
 }
 
 /*прибираємо крапочки*/
@@ -80,8 +81,6 @@ ul {
     font-style: normal;
 }
 
-
-
 /* тимчасово задаємо кордон елементу */
 .tmp-brdr{
     /* outline: 2px solid tomato; */
@@ -107,21 +106,11 @@ ul {
     padding-right: 0;
 }
 
-.backdown-to-footer{
-    margin-bottom: 120px;
-}
-
 .header-justify{
     display: flex;
     justify-content: space-between;
     align-items: center;
 } 
-
-
-
-.header-navigtion{
-    
-}
 
 .header-logo{
     font-family: 'Raleway' , sans-serif;    
@@ -141,19 +130,6 @@ ul {
 .header-list{
     margin-block-start: 0;
     margin-block-end: 0;
-
-}
-
-.header-retreat-raz{
-    margin-left: 242px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.header-item{
-    margin-left: 40px;
-    padding: 24px 0 24px 0;
-    
 }
 
 .header-link{      
@@ -168,25 +144,27 @@ ul {
     color: var(--color-button-link);
 }
 
+.header-retreat-raz{
+    margin-left: 242px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header-item{
+    margin-left: 40px;
+    padding: 24px 0 24px 0; 
+}
+
 .header-info{
     font-size: 16px;
     line-height: 1.5;
-    color: var(--heder-color-info);
-    
+    color: var(--heder-color-info);    
 }
 
 .header-info:hover,
 .header-info:focus{
-    color: var(--color-button-link);
-   
+    color: var(--color-button-link);   
 }
-
-
-/* якби був active */
-/* .header-info:active{
-    color: var(--color-button-link);
-} */
-
 
 /*hero image*/
 
@@ -241,20 +219,6 @@ ul {
      
 }
 
-/* .hero-advantages-list{
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-} */
-
-/* .hero-advantages-item{
-    width: 264px;
-    display: inline-block;
-    margin-left: 22px;
-} */
-
 /*напрямок*/
 .hero-advantages-direction{
     font-weight: 500;
@@ -271,7 +235,7 @@ ul {
 
 /*Що ми робимо-напрямок*/
 .wedoing-direction-section{
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .wedoing-direction-text{
@@ -284,17 +248,11 @@ ul {
     padding-bottom: 72px; 
 }
 
-.wedoing-direction-list{
-
-}
-
-.wedoing-direction-foto{
-
-}
-
 /*наша команда*/
 .ourteam-section{
     background: var(--ourteam-grunt-foto);
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .ourteam-title{
@@ -303,11 +261,7 @@ ul {
     line-height: 1.1;
     color: var(--accent-color-logo-grunt);
     text-align: center;
-    padding-top: 120px;
-    padding-bottom: 72px;
-}
-
-.ourteam-list{
+    
     padding-bottom: 72px;
 }
 
@@ -339,6 +293,11 @@ ul {
     background: var(--accent-color-logo-grunt);
 }
 
+.backdown-to-footer{
+    padding-bottom: 120px;
+    padding-top: 96px;
+}
+
 .footer-block{
     width: 264px;
     margin: 0 0 0 156px;
@@ -360,7 +319,7 @@ ul {
 
 
 .prtf-filtr{
-    margin: 96px 0 72px 0;
+    padding-bottom: 72px;
     justify-content: center;
       
 }
